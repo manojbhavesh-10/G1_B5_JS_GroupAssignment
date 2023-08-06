@@ -1,0 +1,136 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, minmax(auto));
+}
+
+.prev {
+    grid-column: 1/2;
+}
+
+.search {
+    grid-column: 3/5;
+    
+}
+
+.next {
+    grid-column: 6/7;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+button:hover {
+    cursor: pointer;
+}
+
+.prev {
+    display: none;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid black;
+    outline: 0;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, minmax(auto));
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 20px;
+    text-align: left;
+    grid-gap: 10px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 10px 5px rgb(203, 203, 203);
+    
+}
+
+.banner {
+    grid-column: 1/5;
+    background-color: rgb(206, 255, 252);
+}
+
+.info {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: rgb(250, 220, 222);
+   
+}
+
+.experience {
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+.project {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    
+}
+
+.education {
+    grid-column: 2/5;
+    grid-row: 4/5;
+   
+}
+
+.internship {
+    grid-column: 2/5;
+    grid-row: 5/6;
+    
+}
+
+.achievment {
+    grid-column: 2/5;
+    grid-row: 6/7;
+   
+}
+
+
+
+.banner .nested-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, minmax(auto));
+}
+
+.join {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#user-image {
+    margin-top: 9px;
+    margin-left: 70px;
+    width: 80px;
+    height: 80px;
+    grid-column: 4/5;
+}
+
+.personal, .skills, .hobbies {
+    background-color: dimgray;
+    padding: 10px;
+}
+
+.skill-set, .user-hobbies{
+    list-style-type: none;
+}
+
+.first, .second, .third {
+    text-align: right;
+    list-style-type: none;
+}
